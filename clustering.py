@@ -73,10 +73,10 @@ def run_solution():
     ###########################
     if validate == 1:
         print('Validation...')
-        f = open("../input/train.csv", "r")
+        f = open("train/train.csv", "r")
     else:
         print('Generate submission...')
-        f = open("../input/test.csv", "r")
+        f = open("train/test.csv", "r")
     now = datetime.datetime.now()
     path = 'submission_' + str(now.strftime("%Y-%m-%d-%H-%M")) + '.csv'
     out = open(path, "w")
